@@ -1,0 +1,130 @@
+Reset some default styles
+body, h1, h2, h3, ul, li, form, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    background: #f5f6fa;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background: #fff;
+    padding: 2rem 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(44, 62, 80, 0.12);
+    width: 350px;
+    max-width: 90vw;
+}
+
+h1 {
+    color: #273c75;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+input[type="text"],
+input[type="number"] {
+    padding: 0.6rem 1rem;
+    border: 1px solid #dcdde1;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border 0.2s;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: #4078c0;
+    outline: none;
+}
+
+button[type="submit"],
+button[type="reset"] {
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button[type="submit"] {
+    background: #4078c0;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+button[type="submit"]:hover {
+    background: #273c75;
+}
+
+button[type="reset"] {
+    background: #f5f6fa;
+    color: #4078c0;
+    border: 1px solid #4078c0;
+}
+
+button[type="reset"]:hover {
+    background: #e1e8ed;
+}
+
+h2 {
+    color: #353b48;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+#expense-list {
+    list-style: none;
+    margin-bottom: 1.5rem;
+    max-height: 180px;
+    overflow-y: auto;
+    padding-right: 4px;
+}
+
+#expense-list li {
+    background: #f1f2f6;
+    margin-bottom: 0.5rem;
+    padding: 0.7rem 1rem;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    color: #353b48;
+}
+
+#expense-list li:last-child {
+    margin-bottom: 0;
+}
+
+#total {
+    background: #dff9fb;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+#total h3 {
+    color: #4078c0;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+
+
